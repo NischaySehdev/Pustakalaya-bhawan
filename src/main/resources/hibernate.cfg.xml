@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- properties -->
+        <property name="connection.username">192.168.1.50@</property>
+        <property name="connection.password">J@mesbondoo7</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/librarymanagementsystem</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <mapping package="in.sarvshiksha.lms.model" class="in.sarvshiksha.lms.model.AccountDetails"/>
+        <mapping package="in.sarvshiksha.lms.model" class="in.sarvshiksha.lms.model.ClientMenuItem"/>
+    </session-factory>
+
+</hibernate-configuration>
